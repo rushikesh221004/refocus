@@ -1,7 +1,10 @@
+import Header from "./common/header";
 
 export default function Page() {
     return <>
-         This is a home page
+        <div className="w-full h-screen text-white bg-black">
+            <Header/>
+        </div>
     </>;
 }
 
