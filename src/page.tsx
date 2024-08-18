@@ -1,7 +1,7 @@
 
 export default function Page() {
     return <>
-         Home Page
+         This is a home page
     </>;
 }
 
