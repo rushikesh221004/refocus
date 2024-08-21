@@ -1,6 +1,7 @@
 import Header from "./common/header";
 import Work from "./components/work";
 import Stripes from "./components/stripes"
+import Products from "./components/products";
 
 export default function Page() {
     return <>
@@ -8,6 +9,7 @@ export default function Page() {
             <Header/>
             <Work/>
             <Stripes/>
+            <Products/>
         </div>
     </>;
 }
