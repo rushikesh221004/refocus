@@ -2,6 +2,7 @@ import Header from "./common/header";
 import Work from "./components/work";
 import Stripes from "./components/stripes"
 import Products from "./components/products";
+import Marquees from "./components/marquees";
 
 export default function Page() {
     return <>
@@ -10,6 +11,7 @@ export default function Page() {
             <Work/>
             <Stripes/>
             <Products/>
+            <Marquees/>
         </div>
     </>;
 }
