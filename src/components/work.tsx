@@ -17,7 +17,7 @@ export default function Work() {
     return <>
          <div className="w-full">
             <div className="relative max-w-screen-xl mx-auto h-fit">
-                <h1 className="text-[30vw] select-none font-thin">work</h1>
+                <h1 className="text-[30vw] select-none font-thin font-['satoshi_variable']">work</h1>
                 <div className="absolute top-0 w-full h-full">
                     {images.map((item, index) => (item.isActive && <img key={index} src={item.url} alt="image" className="absolute rounded-xl w-64 -translate-x-[50%] -translate-y-[50%]" style={{top: item.top, left: item.left}}/>))}
                 </div>
