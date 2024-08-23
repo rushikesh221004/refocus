@@ -124,7 +124,7 @@ export default function Products() {
         },
     ]
     return <>
-        <div>
+        <div className="mt-32">
             {products.map((item, index) => (
                 <Product key={index} values={item} />
             ))}
