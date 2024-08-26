@@ -62,11 +62,12 @@ export default function Work() {
 
     return <>
         <div className="w-full">
-            <div className="relative max-w-screen-xl mx-auto h-fit">
-                <h1 className="text-[30vw] select-none font-thin font-['satoshi_variable']">work</h1>
+            <div className="relative mb-28 h-fit">
+                <h1 className="text-[20vw] text-center select-none font-thin font-['satoshi_variable']">primexop</h1>
                 <div className="absolute top-0 w-full h-full">
                     {images.map((item, index) => (item.isActive && <img key={index} src={item.url} alt="image" className="absolute rounded-xl w-72 -translate-x-[50%] -translate-y-[50%]" style={{ top: item.top, left: item.left }} />))}
                 </div>
+                <p className="tracking-widest text-center text-gray-400">Web Design, Webflow Development, Creative Development</p>
             </div>
         </div>
     </>;
