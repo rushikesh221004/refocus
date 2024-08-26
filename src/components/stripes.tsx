@@ -2,20 +2,9 @@ import Stripe from "./stripe"
 import noCode from "../assets/svg/noCode.svg"
 import awwwards from "../assets/svg/awwwards.svg"
 import designAwards from "../assets/svg/designAwards.svg"
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 export default function Stripes() {
-    // const settings = {
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     speed: 6000,
-    //     autoplaySpeed: 2000,
-    //     cssEase: "linear"
-    // };
+
     const data = [
         { img: noCode, number: 2 },
         { img: awwwards, number: 15 },
@@ -26,12 +15,13 @@ export default function Stripes() {
     ]
     return <>
     
-        <div className="flex items-center">
-        {/* <Slider {...settings}> */}
+        <div className="py-20 mt-32 w-full relative flex overflow-hidden">
                 {data.map((item, index) => (
                     <Stripe key={index} values={item} />
                 ))}
-             {/* </Slider> */}
+                 {data.map((item, index) => (
+                    <Stripe key={index} values={item} />
+                ))}
         </div>
        
     </>
