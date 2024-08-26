@@ -115,7 +115,7 @@ export default function Products() {
                             animate={{ y: -pos + `rem` }}
                             className="w-full h-full bg-sky-500"
                         ><img src={firstImage} alt="firstImage" className="object-cover w-full h-full" ></img> </motion.div>
-                       <motion.div
+                        <motion.div
                             transition={{ ease: [0.76, 0, 0.24, 1], duration: .5 }}
                             animate={{ y: -pos + `rem` }}
                             className="w-full h-full"
@@ -135,6 +135,11 @@ export default function Products() {
                             animate={{ y: -pos + `rem` }}
                             className="w-full h-full bg-sky-400"
                         > <video src={fourthVideo} autoPlay muted loop className="object-cover w-full h-full" ></video> </motion.div>
+                        <motion.div
+                            transition={{ ease: [0.76, 0, 0.24, 1], duration: .5 }}
+                            animate={{ y: -pos + `rem` }}
+                            className="w-full h-full"
+                        >  <video src={firstVideo} autoPlay muted loop className="object-cover w-full h-full" ></video> </motion.div>
                     </motion.div>
                 </div>
             </div>

@@ -24,8 +24,8 @@ export default function Marquees() {
         [spotify, haufe, yahoo, rainfall, doxel, mural, webflow, rocket, accel, weglot]
     ]
     return <>
-        <div className="py-32">
-            {images.map((item, index) => <Marquee key={index} imagesUrl={item}/>)}
+        <div className="py-20 mt-32 w-full relative overflow-hidden">
+            {images.map((item, index) => <Marquee direction={index === 0 ? "left" : "right"} key={index} imagesUrl={item} />)}
         </div>
     </>
 }
