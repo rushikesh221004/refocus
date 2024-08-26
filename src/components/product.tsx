@@ -7,7 +7,7 @@ type ProductPropsType = {
         live: boolean,
         caseStudy: boolean,
     }
-    mover: number
+    mover: (val: number) => void;
     count: number
 }
 
